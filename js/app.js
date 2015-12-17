@@ -77,7 +77,7 @@ var taskIncomplete = function(){
 }
 
 //set the click handler to the addTask function
-addButton.addEventListener(click, addTask);
+addButton.addEventListener("click", addTask);
 
 var bindTaskEvents = function(taskListItem, checkBoxEventHandler){
 	//select its children
