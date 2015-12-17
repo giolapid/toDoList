@@ -37,6 +37,7 @@ var addTask = function(){
 	var listItem = createNewTaskElement(taskInput.value);
 	incompleteTasksHolder.appendChild(listItem);
 	bindTaskEvents(listItem, taskCompleted);	
+	taskInput.value = "";
 	
 }
 
@@ -76,7 +77,7 @@ var taskIncomplete = function(){
 }
 
 //set the click handler to the addTask function
-addButton.onclick = addTask;
+addButton.addEventListener(click, addTask);
 
 var bindTaskEvents = function(taskListItem, checkBoxEventHandler){
 	//select its children
